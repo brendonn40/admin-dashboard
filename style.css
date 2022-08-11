@@ -6,6 +6,10 @@
     box-sizing: border-box;
     font-family: "Roboto"   
 }
+.container{
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+}
 .sidebar{
     background-color: blue;
 }
@@ -16,6 +20,62 @@
 #Dashboard-img{
     width: 40px;
     height: auto;
+}
+#search-img,#bell{
+    width: 25px;
+    height: auto;
+}
+.header{
+    padding: 16px;
+    background-color:yellow;
+    grid-column: 2/4;
+}
+.upper{
+    display: flex;
+    align-items: center;
+}
+.right-side{
+    display: flex;
+    gap: 25px;
+    align-items: center;
+    margin-right: 30px;
+}
+.left-side{
+    display: flex;
+    gap: 15px;
+    flex: 1;
+    margin-left: 20px
+}
+.lower ul{
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+button{
+    background-color: blue;
+    color: white;
+    width: 70px;
+    height: 25px;
+    border-radius: 8px;
+    border: none;
+}
+input{
+    width: 80%;
+    border-radius: 20px;
+    background-color:rgb(220, 212, 212);
+    border: none;
+}
+
+.projects{
+    background-color: green;
+    grid-column: 2;
+}
+.news{
+    background-color: orange;
+}
+.trends{
+    background-color: burlywood;
+    grid-column: 3;
 }
 .filter-white{
 filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(284deg) brightness(103%) contrast(104%);
