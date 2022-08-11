@@ -26,13 +26,21 @@
     height: auto;
 }
 .header{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
     padding: 16px;
     background-color:yellow;
     grid-column: 2/4;
 }
-.upper{
+/* .upper{
     display: flex;
     align-items: center;
+} */
+.lower{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-left: 20px;
 }
 .right-side{
     display: flex;
@@ -42,25 +50,29 @@
 }
 .left-side{
     display: flex;
+    align-items: center;
     gap: 15px;
     flex: 1;
     margin-left: 20px
 }
-.lower ul{
+.header>ul{
+    align-self: center;
     list-style: none;
     display: flex;
     gap: 15px;
 }
 button{
-    background-color: blue;
+    background-color: #3882f6;
     color: white;
-    width: 70px;
-    height: 25px;
     border-radius: 8px;
-    border: none;
+    border: 1px solid #3882f6 ;
+    padding: 8px 16px;
+    width: 84px;
+    height: auto;
 }
 input{
     width: 80%;
+    height: 30%;
     border-radius: 20px;
     background-color:rgb(220, 212, 212);
     border: none;
