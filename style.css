@@ -23,11 +23,31 @@
     width: 20px;
     height: auto;
 }
+.ul-grid{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 10px;
+    align-items: center;
+    margin-left: 20px;
+    list-style: none;
+    margin-bottom: 45px;
+
+}
+.ul-grid>li{
+    display: flex;
+    gap: 15px;
+}
+
 .dash{
     display: flex;
     align-items: center;
     font-weight: bolder;
     color: white;
+    margin-left: 10px;
+    margin-bottom: 40px;
+    margin-top: 10px;
+    gap: 10px;
+    font-size: 22px;
 }
 #Dashboard-img{
     width: 40px;
@@ -89,7 +109,7 @@ button{
 }
 input{
     width: 80%;
-    height: 30%;
+    height: 50%;
     border-radius: 20px;
     background-color:rgb(220, 212, 212);
     border: none;
